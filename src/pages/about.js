@@ -7,15 +7,18 @@ import Layout from '../components/layout'
 
 export default () => {
   const data = useStaticQuery(graphql`query MyQuery {
-    file(relativePath: {eq: "building-business-ceiling-empty-trucking company charlotte nc.jpg"}) {
+    file(relativePath: {eq: "proofreading2.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-  }
-`)
+}
+  `)
+
+
+
 
   return (
   <>
@@ -26,17 +29,48 @@ export default () => {
         <div className="columns">
           <div className="column">
             <h1 className="title">
-                Why us?We guarantee 100% satisfaction.
+            Proofreading
             </h1>
             <p className="content">
-                All our academic and scientific proofreaders are highly qualified native English speakers. The price is worked out at a flat rate per thousand words, so you know exactly how much the editing will cost in advance.
+            In our standard practice, it's already compulsory to recheck the translation carefully before submission to our client. However, we do still offer a premium option to conduct another round of 100% proofreading on top of the compulsory round of rechecking to clients who want the best quality. 
             </p>
-            <button type="button" className="button is-medium is-success is-dark">View Our Testimonials</button>
           </div>
           <div className="column">
             <Img
               fluid={ data.file.childImageSharp.fluid } 
               alt="inside a trucking depot"
+            />
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column">
+            <h1 className="title">
+            Formatting
+            </h1>
+            <p className="content">
+            Our typsetting or desktop-publishing engineers are here to do pre-processing to turn uneditable documents into editable formats before passing to our translators to translate. After translation, the translated documents will be passed back to the engineer team to recheck and finalize the format before delivery. 
+            </p>
+          </div>
+          <div className="column">
+            <Img
+              fluid={ data.file.childImageSharp.fluid } 
+              alt="inside a trucking depot" 
+            />
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column">
+            <h1 className="title">
+            Translation
+            </h1>
+            <p className="content">
+            Our consultant will communicate with you to fully understand your purposes, objectives and requirements prior to the commencement of any project tasks. As we put the confidentiality as our first priority, all the translation materials will be handled by our team with extreme care, attention and dedication.  
+            </p>
+          </div>
+          <div className="column">
+            <Img
+              fluid={ data.file.childImageSharp.fluid } 
+              alt="inside a trucking depot" 
             />
           </div>
         </div>
