@@ -10,8 +10,6 @@
     "gatsby": "^3.15.0",
     "gatsby-background-image": "^0.9.12",
     "gatsby-image": "^3.11.0",
-    "gatsby-plugin-create-client-paths": "^2.1.21",
-    "gatsby-plugin-google-analytics": "^2.1.32",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-manifest": "^3.15.0",
     "gatsby-plugin-offline": "^3.0.27",
@@ -27,8 +25,8 @@
     "gatsby-transformer-sharp": "^3.15.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
     "sharp": "^0.24.0",
@@ -62,6 +60,6 @@
   },
   "engines": {
     "npm": ">=8.0.0 <9.0.0",
-    "node": ">16.1.19 <18.12.0"
+    "node": ">=12.0.0 <18.12.0"
   }
 }
